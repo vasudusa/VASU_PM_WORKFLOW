@@ -1,0 +1,82 @@
+{
+  "company_name": "Spine Technologies India Private Limited",
+  "team_name": "PM Monthly Dashboard",
+  "theme": {
+    "primary": "#1F4E78",
+    "secondary": "#305496",
+    "background": "#F7F9FC",
+    "panel": "#F3F6FA",
+    "text": "#1F1F1F",
+    "muted": "#606060",
+    "border": "#D7DEE8",
+    "status_colors": {
+      "Active": "#70AD47",
+      "Completed": "#D9EAF7",
+      "Yet To Start": "#FFC000",
+      "Held Up": "#ED7D31",
+      "Lost": "#C00000"
+    },
+    "risk_colors": {
+      "Critical": "#C00000",
+      "High": "#ED7D31",
+      "Watch": "#FFC000",
+      "Healthy": "#70AD47",
+      "Closed": "#D9EAF7"
+    }
+  },
+  "input_directories": [
+    "input",
+    "D:\\VASU_PM_WORKFLOW\\01_Source_Files"
+  ],
+  "explicit_input_files": [
+    "D:\\VASU_PM_WORKFLOW\\01_Source_Files\\VASU's Tracker 2026.xlsx"
+  ],
+  "output_directory": "D:\\VASU_PM_WORKFLOW\\02_Output\\Monthly Business Reports",
+  "logs_directory": "logs",
+  "templates_directory": "templates",
+  "file_patterns": [
+    "*.xlsx",
+    "*.xls",
+    "*.csv"
+  ],
+  "exclude_filename_contains": [
+    "Monthly_Business_Report",
+    "Monthly_Executive_Review",
+    "Data_Quality_Report",
+    "~$"
+  ],
+  "prefer_explicit_input_files": true,
+  "report_month_mode": "current_date",
+  "monthly_report": {
+    "period_mode": "current_date",
+    "selected_report_month": "",
+    "output_root": "D:\\VASU_PM_WORKFLOW\\02_Output",
+    "replace_existing_outputs": true,
+    "legacy_month_copy_enabled": false
+  },
+  "top_n": 10,
+  "currency_symbol": "INR",
+  "sla_targets_days": {
+    "Critical": 15,
+    "High": 30,
+    "Medium": 60,
+    "Low": 120,
+    "Default": 90
+  },
+  "business_kpi_aliases": {
+    "revenue": ["Revenue", "Sales", "Amount", "Invoice Amount", "Billing", "Value", "Deal Value"],
+    "cost": ["Cost", "Expense", "Spend", "Project Cost"],
+    "profit": ["Profit", "Gross Profit", "Net Profit"],
+    "conversion": ["Conversion", "Conversion Rate", "Converted"],
+    "productivity": ["Productivity", "Output", "Completed", "Tasks Completed"],
+    "utilization": ["Utilization", "Capacity Utilization", "Billable Utilization"],
+    "sla": ["SLA", "SLA Met", "SLA Status", "TAT", "Turnaround"]
+  },
+  "status_groups": {
+    "completed": ["completed", "complete", "done", "closed", "go live"],
+    "lost": ["lost", "cancelled", "canceled", "dropped"],
+    "active": ["active", "in progress", "wip", "ongoing"],
+    "not_started": ["yet to start", "not started", "planned", "pending"],
+    "held_up": ["held up", "blocked", "on hold", "hold"]
+  }
+}

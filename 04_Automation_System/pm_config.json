@@ -1,0 +1,138 @@
+{
+  "final_root": "D:\\VASU_PM_WORKFLOW",
+  "source_dir": "D:\\VASU_PM_WORKFLOW\\01_Source_Files",
+  "tracker_file": "D:\\VASU_PM_WORKFLOW\\01_Source_Files\\VASU's Tracker 2026.xlsx",
+  "tracker_sheet": "Sheet1",
+  "sch_file": "D:\\VASU_PM_WORKFLOW\\01_Source_Files\\project_master.xlsx",
+  "use_current_status_file": false,
+  "current_status_file": "",
+  "book1_notes_file": "D:\\VASU_PM_WORKFLOW\\01_Source_Files\\Book1.xlsx",
+  "output_root": "D:\\VASU_PM_WORKFLOW\\02_Output",
+  "workspace_root": "D:\\VASU_PM_WORKFLOW\\02_Output",
+  "alias_review_file": "D:\\VASU_PM_WORKFLOW\\01_Source_Files\\Alias_Matching_Review.xlsx",
+  "company_name": "Spine Technologies India Private Limited",
+  "team_name": "PM Team",
+  "owner_name": "Vasu",
+  "theme": {
+    "primary": "#1F4E78",
+    "secondary": "#305496",
+    "background": "#F7F9FC",
+    "panel": "#F3F6FA",
+    "text": "#1F1F1F",
+    "muted": "#606060",
+    "border": "#D7DEE8",
+    "status_colors": {
+      "Active": "#70AD47",
+      "Completed": "#D9EAF7",
+      "Yet To Start": "#FFC000",
+      "Held Up": "#ED7D31",
+      "Lost": "#C00000"
+    },
+    "risk_colors": {
+      "Critical": "#C00000",
+      "High": "#ED7D31",
+      "Watch": "#FFC000",
+      "Healthy": "#70AD47",
+      "Closed": "#D9EAF7"
+    }
+  },
+  "email": {
+    "create_outlook_draft": false,
+    "display_draft": false,
+    "to": "",
+    "cc": "",
+    "subject_prefix": "PM Project Update"
+  },
+  "weekly_consolidated": {
+    "enabled": false
+  },
+  "project_summaries": {
+    "enabled": false,
+    "create_outlook_drafts": false,
+    "display_drafts": false,
+    "current_statuses": ["Active", "Yet To Start", "Held Up"],
+    "subject_prefix": "Project Status Update",
+    "group_map_file": "D:\\VASU_PM_WORKFLOW\\01_Source_Files\\Project_Outlook_Group_Map.csv"
+  },
+  "weekly_mail_merge": {
+    "enabled": true,
+    "subject_prefix": "Project Status Update",
+    "output_sheet": "Weekly_Mail_Merge"
+  },
+  "auto_pm_note": {
+    "manual_pm_note_wins": true,
+    "fallback_order": ["SCH Project Update", "SCH Project Remark"],
+    "max_note_characters": 1400,
+    "max_sch_context_characters": 900
+  },
+  "risk_thresholds_days": {
+    "watch": 30,
+    "high": 90,
+    "critical": 180
+  },
+  "milestone_sequence": [
+    "Kick Off Meeting",
+    "Datafile Explanation",
+    "Data & Policies Received",
+    "Payroll Configuration & Training",
+    "Salary Tallied",
+    "Parallel Salary Processed",
+    "Attendance Integration",
+    "Leave & Attendance Configuration",
+    "Employee Training & Login Roll Out",
+    "Live Salary Processing",
+    "Phase 2",
+    "Completed"
+  ],
+  "sch_status_definitions": {
+    "Pending For Milestone": {
+      "stage": "Yet To Start",
+      "meaning": "No progress or movement so far.",
+      "suggested_milestone": "Kick Off Meeting"
+    },
+    "Active": {
+      "stage": "Active",
+      "meaning": "Project has started and is moving through implementation milestones.",
+      "suggested_milestone": "Datafile Explanation"
+    },
+    "AC": {
+      "stage": "Active Complete",
+      "meaning": "Everything is successfully completed and client is on watch list.",
+      "suggested_milestone": "Completed"
+    },
+    "FC": {
+      "stage": "Fully Complete",
+      "meaning": "Live salary processing is complete and client is on watch list.",
+      "suggested_milestone": "Live Salary Processing"
+    },
+    "Go LIVE": {
+      "stage": "Go Live",
+      "meaning": "Project is handed over from implementation team to support team.",
+      "suggested_milestone": "Completed"
+    },
+    "Dropped": {
+      "stage": "Dropped",
+      "meaning": "Implementation dropped and client/license discontinued.",
+      "suggested_milestone": "Completed"
+    },
+    "Held": {
+      "stage": "Held",
+      "meaning": "Project/license is running but implementation is on hold.",
+      "suggested_milestone": "Datafile Explanation"
+    },
+    "Lost": {
+      "stage": "Lost",
+      "meaning": "Client/project lost and license is deactivated.",
+      "suggested_milestone": "Completed"
+    },
+    "FC Lost": {
+      "stage": "FC Lost",
+      "meaning": "Project was fully completed but later lost.",
+      "suggested_milestone": "Completed"
+    }
+  },
+  "mail_include_risk_levels": ["Critical", "High"],
+  "mail_include_tracker_statuses": ["Active", "Yet To Start", "Held Up"],
+  "fuzzy_candidate_limit": 3,
+  "fuzzy_candidate_min_score": 0.58
+}
